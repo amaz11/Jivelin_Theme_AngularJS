@@ -1,0 +1,46 @@
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  position:sticky;
+  top: 0;
+  background-color: white;
+  z-index: 50;
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    li {
+      list-style: none;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: black;
+
+        &:hover{
+            color: rgb(145, 70, 189);
+    
+          }
+      }
+      
+    }
+  }
+
+  .res-icon{
+      display: none;
+  }
+}
+
+@media (max-width:750px) {
+  .nav-section{
+    ul{
+      display: none;
+    }
+    .res-icon{
+      display: block;
+  }
+  }
+}

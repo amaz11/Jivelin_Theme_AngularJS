@@ -1,0 +1,208 @@
+// .texcontainer-section {
+//   // overflow: hidden;
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   .text-container {
+//     position: relative;
+//     padding: 24px 24px 24px 0px;
+//     width: 450px;
+//     max-width: 400px;
+//     height: 500px;
+//     text-align: center;
+//     h1 {
+//       font-size: 300px;
+//       color: rgb(255, 255, 255);
+//       padding: 0;
+//       margin: 0 600px 0 0;
+//       filter: drop-shadow(0px 0px 8px #000);
+//     }
+//   }
+//   .text-upper-con {
+//     background: rgba(125, 104, 217, 0.753);
+//     background: linear-gradient(
+//       287deg,
+//       rgba(125, 104, 217, 0.9) 10%,
+//       rgba(104, 79, 213, 0.9) 50%,
+//       rgba(93, 66, 211, 1) 100%
+//     );
+//     width: 100%;
+//     // max-width: 100%;
+//     height: 530px;
+//     color: rgb(255, 255, 255);
+//     padding: 15px;
+//     text-align: start;
+//     .text-position {
+//       position: absolute;
+//       top: 50%;
+//       left: 12%;
+//     }
+//     h2 {
+//       font-size: 50px;
+//       margin: 0;
+//       padding: 0;
+//       line-height: 50px;
+//     }
+//     p {
+//       color: rgb(228, 219, 219);
+//       font-size: 15px;
+//       font-weight: 100;
+//       width: 350px;
+//     }
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+
+//   .scound-content-shadow {
+//     box-shadow: 6px 0 4px -4px #999, -6px 0 4px -4px #999;
+//     -moz-box-shadow: 6px 0 4px -4px #999, -6px 0 4px -4px #999;
+//     -webkit-box-shadow: 6px 0 4px -4px #999, -6px 0 4px -4px #999;
+//   }
+// }
+.texcontainer-section{
+  width: 100%;
+}
+.contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // z-index: -1;
+}
+
+.text-container {
+  position: relative;
+  padding: 0px;
+  span {
+    font-size: 20rem;
+    color: white;
+    filter: drop-shadow(0px 0px 8px #000);
+  }
+}
+.text-upper-con {
+  position: absolute;
+  top: 0;
+  color: white;
+  background: rgba(125, 104, 217, 0.753);
+  background: linear-gradient(
+    287deg,
+    rgba(125, 104, 217, 0.9) 10%,
+    rgba(104, 79, 213, 0.9) 50%,
+    rgba(93, 66, 211, 1) 100%
+  );
+  width: 100%;
+  height: 100%;
+  .text-position {
+    position: absolute;
+    left: 50px;
+    padding: 260px 25px 0 10px;
+    h2 {
+      font-size: 3.5rem;
+      line-height: 60px;
+      margin: 0 auto;
+      // max-width: 350px;
+      font-weight: bold;
+    }
+    p {
+      max-width: 450px;
+    }
+  }
+}
+// .text-upper-con{
+//    position: absolute;
+//    top: 0;
+//    background: rgba(125, 104, 217, 0.753);
+//    background: linear-gradient(
+//         287deg,
+//         rgba(125, 104, 217, 0.9) 10%,
+//         rgba(104, 79, 213, 0.9) 50%,
+//         rgba(93, 66, 211, 1) 100%
+//       );
+//       width: 100%;
+//       height: 100%;
+
+//   }
+// .text-position{
+//     position: absolute;
+//     top: 250px;
+//     left: 50px;
+//     color: white;
+//     h2{
+//       font-size: 4rem;
+//       line-height: 60px;
+//       margin: 0 auto;
+//       // max-width: 350px;
+//       font-weight: bold;
+
+//      }
+//      p{
+//       max-width: 450px;
+//      }
+// }
+
+// @media (max-width: 1720px) {
+
+//   .text-upper-con{
+//     h2{
+//       font-size: 3rem;
+//     }
+//   }
+// }
+
+// @media (max-width: 1320px) {
+//   .text-upper-con{
+//     h2{
+//       font-size: 2.8rem;
+//     }
+//   }
+// }
+@media (max-width: 1300px) {
+  .contents {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .text-upper-con{
+    .text-position {
+      padding: 230px 25px 0 300px;
+    }
+  }
+ 
+}
+
+@media (max-width: 1080px) {
+  .contents {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .text-upper-con{
+    .text-position {
+      padding: 230px 25px 0 200px;
+    }
+  }
+ 
+}
+
+@media (max-width: 800px) {
+  .contents {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .text-upper-con{
+    .text-position {
+      padding: 260px 25px 0 10px;
+    }
+  }
+ 
+}
+
+@media (max-width: 480px){
+
+  .text-upper-con{
+    .text-position {
+    left: 20px;
+      text-align: center;
+      h2{
+        font-size: 2.5rem;
+      }
+    }
+}
+}
